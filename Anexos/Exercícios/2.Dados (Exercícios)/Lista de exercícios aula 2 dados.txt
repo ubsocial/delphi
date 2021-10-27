@@ -1,0 +1,28 @@
+===== EXERCÍCIOS (2.Dados) =====
+(Haverá aula específica em que as respostas desses exercícios serão compartilhadas. Da mesma forma, os códigos da resolução dos mesmos estarão disponíveis no Github do material do curso)
+
+1. Complete a calculadora, projeto realizado ao longo da aula 2, adicionando as funcionalidades faltantes:
+	a. Soma entre dois valores
+	b. Subtração entre dois valores
+	c. Multiplicação entre dois valores
+	d. Divisão entre dois valores
+	e. Potenciação, ao quadrado, do primeiro valor
+	f. Potenciação personalizada, onde o primeiro valor é a base e o segundo o expoente
+	g. Valor absoluto do primeiro valor
+	h. De forma geral, precisa-se do campo(s) preenchido para realizar as operações da calculadora
+	
+2. Aprimorar condições à calculadora
+	a. Condição onde somente 2 campos de valores preenchidos podem ser calculados com operação que necessita de ambos
+	b. Condição que não existe divisão por zero
+	c. A label de resultado deverá ficar invisível enquanto não houver resposta (Utilize '.Visible := True/False')
+	d. Após os resultados da operação, os campos edit deverão ser limpos de seus textos
+	e. Mostre uma mensagem de Success com o resultado da operação calculada
+
+
+// Nesse mesmo projeto, crie outra Unit para acrescentar o exercício 3, e 2 botões (Próximo/Anterior) para navegar entre as Units desses exercícios desse projeto
+
+3. Desenvolver um sistema de semáforo, em que o mesmo possua 3 botões (vermelho, amarelo e verde) e uma label pra expressar o resultado. Ao clicar em um dos botões, o texto deverá ficar com a cor informada do mesmo, sua fonte será modificada e seu tamanho também.
+	a. Vermelho: Texto vermelho, fonte Arial, tamanho 15
+	b. Amarelo: Texto amarelo, fonte Times, tamanho 12
+	c. Verde: Texto verde, fonte Consolas, tamanho 16
+PS: Para alterar fonte de label, use '.Font.Name'. Para tamanho de fonte, use '.Font.Size'. Para cor da fonte, use '.Color' := clNomeCor (Ex: Red)

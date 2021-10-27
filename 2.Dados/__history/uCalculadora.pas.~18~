@@ -1,0 +1,52 @@
+unit uCalculadora;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Math;
+
+type
+  TfrmCalculadora = class(TForm)
+    edtVal1: TEdit;
+    edtVal2: TEdit;
+    lblResultado: TLabel;
+    btnSoma: TButton;
+    btnRaiz: TButton;
+    btnPot: TButton;
+    procedure btnSomaClick(Sender: TObject);
+    procedure btnRaizClick(Sender: TObject);
+    procedure btnPotClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalculadora: TfrmCalculadora;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCalculadora.btnPotClick(Sender: TObject);
+var
+  res: Double;
+begin
+  res := Power(2,3);
+  lblResultado.Caption := FloatToStr(res);
+
+end;
+
+procedure TfrmCalculadora.btnRaizClick(Sender: TObject);
+begin
+  lblResultado.Caption := FloatToStr(SQRT(StrToInt((edtVal1.Text))));
+end;
+
+procedure TfrmCalculadora.btnSomaClick(Sender: TObject);
+begin
+  lblResultado.Caption := FloatToStr(StrToFloat(edtVal1.Text) + StrToFloat(edtVal2.Text));
+end;
+
+end.

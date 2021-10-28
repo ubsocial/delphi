@@ -1,0 +1,14 @@
+program prjExAula2;
+
+uses
+  Vcl.Forms,
+  uExAula2 in 'uExAula2.pas' {frmExercicio1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmExercicio1, frmExercicio1);
+  Application.Run;
+end.

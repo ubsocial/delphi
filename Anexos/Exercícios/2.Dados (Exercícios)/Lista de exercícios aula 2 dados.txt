@@ -6,7 +6,7 @@
 	b. Subtração entre dois valores
 	c. Multiplicação entre dois valores
 	d. Divisão entre dois valores
-	e. Potenciação, ao quadrado, do primeiro valor
+	e. Potenciação, ao quadrado e ao cubo, do primeiro valor
 	f. Potenciação personalizada, onde o primeiro valor é a base e o segundo o expoente
 	g. Valor absoluto do primeiro valor
 	h. De forma geral, precisa-se do campo(s) preenchido para realizar as operações da calculadora
@@ -16,7 +16,7 @@
 	b. Condição que não existe divisão por zero
 	c. A label de resultado deverá ficar invisível enquanto não houver resposta (Utilize '.Visible := True/False')
 	d. Após os resultados da operação, os campos edit deverão ser limpos de seus textos
-	e. Mostre uma mensagem de Success com o resultado da operação calculada
+	e. Mostre uma mensagem de Confirmation com o resultado da operação calculada
 
 
 // Nesse mesmo projeto, crie outra Unit para acrescentar o exercício 3, e 2 botões (Próximo/Anterior) para navegar entre as Units desses exercícios desse projeto

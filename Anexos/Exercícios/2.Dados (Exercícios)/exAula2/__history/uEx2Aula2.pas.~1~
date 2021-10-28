@@ -1,0 +1,28 @@
+unit uEx2Aula2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmExercicio2 = class(TForm)
+    btnVermelho: TButton;
+    btnAmarelo: TButton;
+    btnVerde: TButton;
+    lblResultado: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmExercicio2: TfrmExercicio2;
+
+implementation
+
+{$R *.dfm}
+
+end.

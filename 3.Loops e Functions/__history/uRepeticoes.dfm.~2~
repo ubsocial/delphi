@@ -1,0 +1,59 @@
+object frmRepeticoes: TfrmRepeticoes
+  Left = 0
+  Top = 0
+  Caption = 'Repeti'#231#245'es'
+  ClientHeight = 417
+  ClientWidth = 304
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btnWhileDo: TButton
+    Left = 8
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'While Do'
+    TabOrder = 0
+  end
+  object btnRepeatUntil: TButton
+    Left = 89
+    Top = 32
+    Width = 75
+    Height = 25
+    Caption = 'Repeat Until'
+    TabOrder = 1
+  end
+  object edtIntervalo: TEdit
+    Left = 8
+    Top = 5
+    Width = 156
+    Height = 21
+    NumbersOnly = True
+    TabOrder = 2
+    Text = 'Intervalo'
+  end
+  object Memo1: TMemo
+    Left = 8
+    Top = 63
+    Width = 156
+    Height = 266
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 3
+  end
+  object btnAnteriorCaseListbox: TButton
+    Left = 170
+    Top = 3
+    Width = 127
+    Height = 25
+    Caption = 'Anterior (Case Listbox)'
+    TabOrder = 4
+    OnClick = btnAnteriorCaseListboxClick
+  end
+end

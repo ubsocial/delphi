@@ -1,0 +1,14 @@
+program prjTesteAula3;
+
+uses
+  Vcl.Forms,
+  uCase in 'uCase.pas' {frmCase};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCase, frmCase);
+  Application.Run;
+end.

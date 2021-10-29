@@ -1,0 +1,45 @@
+object frmCaseListbox: TfrmCaseListbox
+  Left = 0
+  Top = 0
+  Caption = 'Case Listbox'
+  ClientHeight = 149
+  ClientWidth = 270
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblCidade: TLabel
+    Left = 8
+    Top = 111
+    Width = 33
+    Height = 13
+    Caption = 'Cidade'
+  end
+  object lstCidade: TListBox
+    Left = 8
+    Top = 8
+    Width = 121
+    Height = 97
+    ItemHeight = 13
+    Items.Strings = (
+      'Bras'#237'lia'
+      'Fortaleza'
+      'Porto Alegre')
+    TabOrder = 0
+    OnClick = lstCidadeClick
+  end
+  object Button1: TButton
+    Left = 135
+    Top = 8
+    Width = 114
+    Height = 25
+    Caption = 'Anterior (For Memo)'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+end

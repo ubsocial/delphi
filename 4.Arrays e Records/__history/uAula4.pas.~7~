@@ -1,0 +1,78 @@
+unit uAula4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.Grids;
+
+type
+  TForm1 = class(TForm)
+    popMenuArquivo: TPopupMenu;
+    MainMenu1: TMainMenu;
+    btnAbrirPopupMenu: TButton;
+    btnFecharPopupMenu: TButton;
+    optArquivo: TMenuItem;
+    Abrir1: TMenuItem;
+    Fechar1: TMenuItem;
+    optSair: TMenuItem;
+    Arquivo1: TMenuItem;
+    Abrir2: TMenuItem;
+    Fechar2: TMenuItem;
+    optSalvar: TMenuItem;
+    Editar1: TMenuItem;
+    Inicio1: TMenuItem;
+    Final1: TMenuItem;
+    tmrDataHora: TTimer;
+    lblDataHora: TLabel;
+    memLista: TMemo;
+    btnGerarLista: TButton;
+    StringGrid1: TStringGrid;
+    procedure btnAbrirPopupMenuClick(Sender: TObject);
+    procedure btnFecharPopupMenuClick(Sender: TObject);
+    procedure tmrDataHoraTimer(Sender: TObject);
+    procedure btnGerarListaClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnAbrirPopupMenuClick(Sender: TObject);
+begin
+  popMenuArquivo.Popup(10,50);
+end;
+
+procedure TForm1.btnFecharPopupMenuClick(Sender: TObject);
+begin
+  popMenuArquivo.CloseMenu;
+end;
+
+procedure TForm1.btnGerarListaClick(Sender: TObject);
+var
+  lista: array [0..5] of Integer;
+  soma,I: Integer;
+begin
+  soma := 0;
+  for I := Low(lista) to High(lista) do
+  begin
+    lista[I] := soma;
+    memLista.Lines.Add(lista[I].ToString);
+    inc(soma);
+  end;
+end;
+
+procedure TForm1.tmrDataHoraTimer(Sender: TObject);
+begin
+  lblDataHora.Caption := TimeToStr(time) + ' ' + FormatDateTime('dddd, dd "de" mmmm "de" yyyy',now);
+end;
+
+end.

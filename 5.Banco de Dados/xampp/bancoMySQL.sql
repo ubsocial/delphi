@@ -6,4 +6,4 @@ CREATE TABLE pessoa (
 	nome VARCHAR(50) NOT NULL
 );
 
-INSERT INTO pessoa(nome) VALUES ("mateus"),("mateus2"),("mateus3");
+INSERT INTO pessoa(nome) VALUES ("ub1"),("ub2"),("ub3");

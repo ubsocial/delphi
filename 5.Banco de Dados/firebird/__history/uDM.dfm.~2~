@@ -1,0 +1,17 @@
+object DataModule2: TDataModule2
+  OldCreateOrder = False
+  Height = 325
+  Width = 705
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Mateus Schwede\Documents\delphi\5.Banco de Dad' +
+        'os\firebird\DBLOJA.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Left = 48
+    Top = 24
+  end
+end

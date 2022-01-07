@@ -1,0 +1,32 @@
+unit uClientesTeste;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TfrmClientesTeste = class(TForm)
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmClientesTeste: TfrmClientesTeste;
+
+implementation
+
+{$R *.dfm}
+
+uses uDM, uMenu;
+
+procedure TfrmClientesTeste.FormShow(Sender: TObject);
+begin
+  dm.tbClientes.Open;
+end;
+
+end.
